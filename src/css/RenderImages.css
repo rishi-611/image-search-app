@@ -1,0 +1,15 @@
+.img-list-container {
+  display: grid;
+  grid-gap: 0 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 10px;
+}
+
+.img-list-container li {
+  list-style: none;
+  max-width: 250px;
+}
+
+.img-list-container li img {
+  max-width: 100%;
+}

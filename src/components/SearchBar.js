@@ -18,7 +18,14 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <div className="ui segment" style={{ marginTop: "1rem" }}>
+      <div
+        className="ui segment"
+        style={{
+          marginTop: "1rem",
+          background:
+            "linear-gradient(to top right, rgb(45, 45, 45), rgb(80, 80, 80))",
+        }}
+      >
         <form className="ui form" onSubmit={this.onFormSubmit.bind(this)}>
           <label htmlFor="searchBox" className="ui icon input field">
             <input

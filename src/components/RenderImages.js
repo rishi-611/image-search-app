@@ -1,10 +1,10 @@
 import React from "react";
+import "../css/RenderImages.css";
+import ImageCard from "./ImageCard";
 
 const RenderImages = function (props) {
   const images = props.imageList.map((image) => (
-    <li key={image.id}>
-      <img src={image.url} alt={image.alt} />
-    </li>
+    <ImageCard key={image.id} image={image} />
   ));
   // console.log(images);
 
