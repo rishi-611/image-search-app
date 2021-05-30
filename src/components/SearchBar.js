@@ -1,5 +1,7 @@
 import React from "react";
 import "semantic-ui-css/semantic.min.css";
+import Header from "./Header";
+import "../css/SearchBar.css";
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -19,13 +21,15 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div
-        className="ui segment"
+        className="ui segment searchBar-container"
         style={{
           marginTop: "1rem",
           background:
             "linear-gradient(to top right, rgb(45, 45, 45), rgb(80, 80, 80))",
         }}
       >
+        {" "}
+        <Header />
         <form className="ui form" onSubmit={this.onFormSubmit.bind(this)}>
           <label htmlFor="searchBox" className="ui icon input field">
             <input
